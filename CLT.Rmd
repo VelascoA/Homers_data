@@ -62,3 +62,13 @@ sample9SD<-sd(x.avg)
 
 Sample size 9 is not unimodel by having multiple peaks through out the chart.By observing the peaks it seems many people's opinion sit in between hating her and liking her.The mean for the peaks would be `r sample9mean` and the standard deviation would be `r sample9SD`. 
 
+```{r}
+numb = 16
+Hdata   <- sample(Homers_data$kkardashtemp ,size = numb*1000, replace=T)
+mdata  <-matrix(Hdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+densityplot(x.avg,main="sample size 16")
+sample16mean<- mean(x.avg)
+sample16SD<-sd(x.avg)
+```
+The mean for the peaks would be `r sample16mean` and the standard deviation would be `r sample16SD`. 
