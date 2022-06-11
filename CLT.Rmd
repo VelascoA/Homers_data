@@ -72,3 +72,14 @@ sample16mean<- mean(x.avg)
 sample16SD<-sd(x.avg)
 ```
 The mean for the peaks would be `r sample16mean` and the standard deviation would be `r sample16SD`. 
+
+```{r}
+numb = 36
+Hdata   <- sample(Homers_data$kkardashtemp ,size = numb*1000, replace=T)
+mdata  <-matrix(Hdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+densityplot(x.avg,main="sample size 36")
+sample36mean<- mean(x.avg)
+sample36SD<-sd(x.avg)
+```
+The mean for the peaks would be `r sample36mean` and the standard deviation would be `r sample36SD`. 
