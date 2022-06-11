@@ -87,6 +87,6 @@ The mean for the peaks would be `r sample36mean` and the standard deviation woul
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
-When there is a small sample size the graphs are clearly not unimodel by having multiple and different peaks through out the graph. However when the sample size grows the amount of peaks shrink but still has a difference in it that create peaks, until the sample size is 36 where it often but not always shows unimodel. The data shows most people have a mediocre opinion of Kim Kardashian. The only time we see those who definitely hate her and love her are when the sample size are small. It can be seen in the mean of the samples having a mean around 50 which is the exact middle of the possible rating to 100.
+When there is a small sample size the graphs are clearly not unimodel by having multiple and different peaks throughout the graph. However when the sample size grows the amount of peaks shrink but still has a difference that create peaks, until the sample size is 36 where it often but not always shows unimodel. The data shows most people have a mediocre opinion of Kim Kardashian. The only time we see those who definitely hate her or love her are when the sample size are small. It can be seen in the mean of the samples by having a mean around 50 which is the middle of the possible ratings of 100.
 
 
