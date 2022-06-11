@@ -27,3 +27,15 @@ the other a little taller on the side that loves her. The mean of the data is `r
 
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
  
+```{r}
+numb = 2
+Hdata   <- sample(Homers_data$kkardashtemp ,size = numb*1000, replace=T)
+mdata  <-matrix(Hdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+densityplot(x.avg,main="sample size 2")
+samplemean<- mean(x.avg)
+sampleSD<-sd(x.avg)
+```
+
+The plot is not unimodel because it shows three peaks. the tallest begins in the middle those who are okay with her the next would be those that love her and the last peak and the smallest are those who hate her. The mean for the peaks would be `r samplemean` and the standard deviation would be `r sampleSD`.
+ 
